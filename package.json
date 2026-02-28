@@ -1,21 +1,48 @@
 {
-  "name": "futo-departments",
+  "name": "@idikaeliada/futo-departments",
   "version": "1.0.0",
-  "description": "",
+  "description": "Faculties and departments data for the Federal University of Technology Owerri (FUTO), with TypeScript types and helper utilities.",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "futo",
+    "nigeria",
+    "university",
+    "departments",
+    "faculties"
+  ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest --run",
+    "build": "tsup"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IdikaEliada/futo-departments.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Idika Eliada",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/IdikaEliada/futo-departments/issues"
   },
-  "homepage": "https://github.com/IdikaEliada/futo-departments#readme"
+  "homepage": "https://github.com/IdikaEliada/futo-departments#readme",
+  "devDependencies": {
+    "@types/node": "^25.3.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
 }
