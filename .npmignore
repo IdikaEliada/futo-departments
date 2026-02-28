@@ -1,0 +1,9 @@
+# .npmignore
+src/
+tests/
+__tests__/
+*.test.*
+*.spec.*
+.github/
+.vscode/
+coverage/
