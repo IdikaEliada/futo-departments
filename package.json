@@ -1,6 +1,6 @@
 {
   "name": "@idikaeliada/futo-departments",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Faculties and departments data for the Federal University of Technology Owerri (FUTO), with TypeScript types and helper utilities.",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
