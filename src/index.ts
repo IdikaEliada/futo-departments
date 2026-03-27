@@ -237,17 +237,17 @@ export const departmentAbbreviations: Record<Department, string> = {
 
 export const facultyAbbreviations: Record<Faculty, string> = {
   "School of Engineering & Engineering Technology": "SEET",
-  "School of Physical Sciences": "SPS",
-  "School of Biological Sciences": "SBS",
+  "School of Physical Sciences": "SOPS",
+  "School of Biological Sciences": "SOBS",
   "School of Agriculture & Agricultural Technology": "SAAT",
   "School of Information & Communication Technology": "SICT",
-  "School of Environmental Sciences": "SES",
+  "School of Environmental Sciences": "SOES",
   "School of Logistics & Innovation Technology": "SLIT",
-  "School of Health Technology": "SHT",
+  "School of Health Technology": "SOHT",
   "School of Electrical Systems & Engineering Technology": "SESET",
   "School of Basic Medical Sciences": "SBMS",
   "College of Medicine": "COM",
-  "Ce-Sustainable Procurement, Environmental & Social Standards": "CESS",
+  "Ce-Sustainable Procurement, Environmental & Social Standards": "CESPESS",
 };
 
 // ─── Abbreviation helpers ─────────────────────────────────────────────────────

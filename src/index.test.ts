@@ -109,7 +109,8 @@ describe("shortenDepartment()", () => {
 describe("shortenFaculty()", () => {
   it("returns the correct abbreviation for known faculties", () => {
     expect(shortenFaculty("College of Medicine")).toBe("COM");
-    expect(shortenFaculty("School of Physical Sciences")).toBe("SPS");
+    expect(shortenFaculty("School of Physical Sciences")).toBe("SOPS");
+    expect(shortenFaculty("Ce-Sustainable Procurement, Environmental & Social Standards")).toBe("CESPESS")
     expect(shortenFaculty("School of Information & Communication Technology")).toBe("SICT");
     expect(shortenFaculty("School of Electrical Systems & Engineering Technology")).toBe("SESET");
   });
@@ -256,7 +257,7 @@ describe("getDepartmentAbbreviation()", () => {
 describe("getFacultyAbbreviation()", () => {
   it("returns the correct code for a known faculty", () => {
     expect(getFacultyAbbreviation("College of Medicine")).toBe("COM");
-    expect(getFacultyAbbreviation("School of Physical Sciences")).toBe("SPS");
+    expect(getFacultyAbbreviation("School of Physical Sciences")).toBe("SOPS");
   });
 
   it("returns undefined for an unknown faculty (no fallback)", () => {

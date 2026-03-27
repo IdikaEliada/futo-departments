@@ -38,7 +38,7 @@
   "bugs": {
     "url": "https://github.com/IdikaEliada/futo-departments/issues"
   },
-  "homepage": "https://github.com/IdikaEliada/futo-departments#readme",
+  "homepage": "https://futo-departments-docs.pxxl.click/documentation",
   "devDependencies": {
     "@types/node": "^25.3.2",
     "tsup": "^8.5.1",
