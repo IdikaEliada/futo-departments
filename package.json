@@ -24,6 +24,9 @@
     "faculties"
   ],
   "main": "index.js",
+  "browser": "./dist/index.global.js",
+  "unpkg": "./dist/index.global.js",
+  "jsdelivr": "./dist/index.global.js",
   "scripts": {
     "test": "vitest --run",
     "build": "tsup"
