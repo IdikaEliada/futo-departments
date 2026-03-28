@@ -1,5 +1,10 @@
+# deps
 node_modules/
 
+# builds
 dist/
-
 *.tgz
+
+# misc
+.DS_Store
+*.log

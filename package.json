@@ -1,53 +1,13 @@
 {
-  "name": "@idikaeliada/futo-departments",
-  "version": "1.0.3",
-  "description": "Faculties and departments data for the Federal University of Technology Owerri (FUTO), with TypeScript types and helper utilities.",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
-  },
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
+  "name": "futo-departments",
+  "private": true,
+  "workspaces": [
+    "packages/*"
   ],
-  "keywords": [
-    "futo",
-    "nigeria",
-    "university",
-    "departments",
-    "faculties"
-  ],
-  "main": "./dist/index.cjs",
-  "browser": "./dist/index.global.js",
-  "unpkg": "./dist/index.global.js",
-  "jsdelivr": "./dist/index.global.js",
   "scripts": {
-    "test": "vitest --run",
-    "build": "tsup",
-    "publish:npm": "npm publish --access public --registry https://registry.npmjs.org",
-    "publish:github": "npm publish --access public --registry https://npm.pkg.github.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/IdikaEliada/futo-departments.git"
-  },
-  "author": "Idika Eliada",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/IdikaEliada/futo-departments/issues"
-  },
-  "homepage": "https://futo-departments-docs.pxxl.click/documentation",
-  "devDependencies": {
-    "@types/node": "^25.3.2",
-    "tsup": "^8.5.1",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.18"
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "build:js": "npm run build --workspace=packages/js",
+    "test:js": "npm run test --workspace=packages/js"
   }
 }

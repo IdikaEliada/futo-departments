@@ -1,0 +1,73 @@
+[
+  { "name": "Petroleum Engineering", "abbreviation": "PET", "faculty": "School of Engineering & Engineering Technology" },
+  { "name": "Materials & Metallurgical Engineering", "abbreviation": "MME", "faculty": "School of Engineering & Engineering Technology" },
+  { "name": "Mechanical Engineering", "abbreviation": "MEE", "faculty": "School of Engineering & Engineering Technology" },
+  { "name": "Civil Engineering", "abbreviation": "CIE", "faculty": "School of Engineering & Engineering Technology" },
+  { "name": "Chemical Engineering", "abbreviation": "CHE", "faculty": "School of Engineering & Engineering Technology" },
+  { "name": "Food Science & Technology", "abbreviation": "FST", "faculty": "School of Engineering & Engineering Technology" },
+  { "name": "Polymer & Textile Engineering", "abbreviation": "PTE", "faculty": "School of Engineering & Engineering Technology" },
+  { "name": "Biomedical Engineering", "abbreviation": "BME", "faculty": "School of Engineering & Engineering Technology" },
+  { "name": "Agricultural and Bioresources Engineering", "abbreviation": "ABE", "faculty": "School of Engineering & Engineering Technology" },
+
+  { "name": "Mathematics", "abbreviation": "MTH", "faculty": "School of Physical Sciences" },
+  { "name": "Physics", "abbreviation": "PHY", "faculty": "School of Physical Sciences" },
+  { "name": "Chemistry", "abbreviation": "CHM", "faculty": "School of Physical Sciences" },
+  { "name": "Statistics", "abbreviation": "STA", "faculty": "School of Physical Sciences" },
+  { "name": "Science Laboratory Technology", "abbreviation": "SLT", "faculty": "School of Physical Sciences" },
+
+  { "name": "Biochemistry", "abbreviation": "BCH", "faculty": "School of Biological Sciences" },
+  { "name": "Microbiology", "abbreviation": "MCB", "faculty": "School of Biological Sciences" },
+  { "name": "Biotechnology", "abbreviation": "BTC", "faculty": "School of Biological Sciences" },
+  { "name": "Biology", "abbreviation": "BIO", "faculty": "School of Biological Sciences" },
+  { "name": "Forensic Science", "abbreviation": "FRS", "faculty": "School of Biological Sciences" },
+
+  { "name": "Crop Science and Technology", "abbreviation": "CST", "faculty": "School of Agriculture & Agricultural Technology" },
+  { "name": "Agricultural Economics", "abbreviation": "AEC", "faculty": "School of Agriculture & Agricultural Technology" },
+  { "name": "Agricultural Extension", "abbreviation": "AEX", "faculty": "School of Agriculture & Agricultural Technology" },
+  { "name": "Animal Science and Technology", "abbreviation": "AST", "faculty": "School of Agriculture & Agricultural Technology" },
+  { "name": "Fisheries and Aquaculture Technology", "abbreviation": "FAT", "faculty": "School of Agriculture & Agricultural Technology" },
+  { "name": "Forestry and Wildlife Technology", "abbreviation": "FWT", "faculty": "School of Agriculture & Agricultural Technology" },
+  { "name": "Soil Science and Technology", "abbreviation": "SST", "faculty": "School of Agriculture & Agricultural Technology" },
+
+  { "name": "Computer Science", "abbreviation": "CSC", "faculty": "School of Information & Communication Technology" },
+  { "name": "Software Engineering", "abbreviation": "SOE", "faculty": "School of Information & Communication Technology" },
+  { "name": "Cyber Security", "abbreviation": "CYB", "faculty": "School of Information & Communication Technology" },
+  { "name": "Information Technology", "abbreviation": "IFT", "faculty": "School of Information & Communication Technology" },
+
+  { "name": "Architecture", "abbreviation": "ARC", "faculty": "School of Environmental Sciences" },
+  { "name": "Building Technology", "abbreviation": "BLD", "faculty": "School of Environmental Sciences" },
+  { "name": "Environmental Management", "abbreviation": "EVM", "faculty": "School of Environmental Sciences" },
+  { "name": "Quantity Surveying", "abbreviation": "QST", "faculty": "School of Environmental Sciences" },
+  { "name": "Surveying and Geoinformatics", "abbreviation": "SVG", "faculty": "School of Environmental Sciences" },
+  { "name": "Urban and Regional Planning", "abbreviation": "URP", "faculty": "School of Environmental Sciences" },
+  { "name": "Estate Management and Evaluation", "abbreviation": "ESV", "faculty": "School of Environmental Sciences" },
+
+  { "name": "Logistics & Transport Technology", "abbreviation": "LTT", "faculty": "School of Logistics & Innovation Technology" },
+  { "name": "Entrepreneurship & Innovation", "abbreviation": "ENI", "faculty": "School of Logistics & Innovation Technology" },
+  { "name": "Maritime Technology and Logistics", "abbreviation": "MST", "faculty": "School of Logistics & Innovation Technology" },
+  { "name": "Supply Chain Management", "abbreviation": "SCM", "faculty": "School of Logistics & Innovation Technology" },
+  { "name": "Financial Innovation and Technology", "abbreviation": "FIT", "faculty": "School of Logistics & Innovation Technology" },
+  { "name": "Project Management Technology", "abbreviation": "PMT", "faculty": "School of Logistics & Innovation Technology" },
+
+  { "name": "Prosthetics and Orthotics", "abbreviation": "POT", "faculty": "School of Health Technology" },
+  { "name": "Environmental Health Science", "abbreviation": "EHS", "faculty": "School of Health Technology" },
+  { "name": "Optometry", "abbreviation": "OPT", "faculty": "School of Health Technology" },
+  { "name": "Public Health Technology", "abbreviation": "PUH", "faculty": "School of Health Technology" },
+  { "name": "Dental Technology", "abbreviation": "DNT", "faculty": "School of Health Technology" },
+  { "name": "Radiography", "abbreviation": "RAD", "faculty": "School of Health Technology" },
+
+  { "name": "Mechatronics Engineering", "abbreviation": "MCE", "faculty": "School of Electrical Systems & Engineering Technology" },
+  { "name": "Computer Engineering", "abbreviation": "CPE", "faculty": "School of Electrical Systems & Engineering Technology" },
+  { "name": "Electronics Engineering", "abbreviation": "ELE", "faculty": "School of Electrical Systems & Engineering Technology" },
+  { "name": "Telecommunications Engineering", "abbreviation": "TCE", "faculty": "School of Electrical Systems & Engineering Technology" },
+  { "name": "Electrical (Power Systems) Engineering", "abbreviation": "EPE", "faculty": "School of Electrical Systems & Engineering Technology" },
+
+  { "name": "Human Anatomy", "abbreviation": "ANA", "faculty": "School of Basic Medical Sciences" },
+  { "name": "Human Physiology", "abbreviation": "PHS", "faculty": "School of Basic Medical Sciences" },
+
+  { "name": "Medicine and Surgery (MBBS)", "abbreviation": "MBBS", "faculty": "College of Medicine" },
+
+  { "name": "Sustainable Social Development", "abbreviation": "SSD", "faculty": "Ce-Sustainable Procurement, Environmental & Social Standards" },
+  { "name": "Sustainable Environmental Studies", "abbreviation": "SES", "faculty": "Ce-Sustainable Procurement, Environmental & Social Standards" },
+  { "name": "Procurement Management", "abbreviation": "PRM", "faculty": "Ce-Sustainable Procurement, Environmental & Social Standards" }
+]

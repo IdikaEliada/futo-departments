@@ -1,0 +1,14 @@
+[
+  { "name": "School of Engineering & Engineering Technology", "abbreviation": "SEET" },
+  { "name": "School of Physical Sciences", "abbreviation": "SOPS" },
+  { "name": "School of Biological Sciences", "abbreviation": "SOBS" },
+  { "name": "School of Agriculture & Agricultural Technology", "abbreviation": "SAAT" },
+  { "name": "School of Information & Communication Technology", "abbreviation": "SICT" },
+  { "name": "School of Environmental Sciences", "abbreviation": "SOES" },
+  { "name": "School of Logistics & Innovation Technology", "abbreviation": "SLIT" },
+  { "name": "School of Health Technology", "abbreviation": "SOHT" },
+  { "name": "School of Electrical Systems & Engineering Technology", "abbreviation": "SESET" },
+  { "name": "School of Basic Medical Sciences", "abbreviation": "SBMS" },
+  { "name": "College of Medicine", "abbreviation": "COM" },
+  { "name": "Ce-Sustainable Procurement, Environmental & Social Standards", "abbreviation": "CESPESS" }
+]
