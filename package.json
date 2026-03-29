@@ -11,6 +11,7 @@
     "codegen": "npx tsx scripts/codegen.ts && python3 scripts/codegen.py",
     "codegen:js": "npx tsx scripts/codegen.ts",
     "codegen:py": "python3 scripts/codegen.py",
+    "codegen:php": "php scripts/codegen.php",
     "build:js": "turbo run build --filter=@idikaeliada/futo-departments",
     "build:py": "cd packages/python && python -m build",
     "test:js": "turbo run test --filter=@idikaeliada/futo-departments",
