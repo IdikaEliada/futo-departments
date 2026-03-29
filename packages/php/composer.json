@@ -1,0 +1,19 @@
+{
+    "name": "idikaelaida/futo-departments",
+    "description": "PHPfirst data package for FUTO (Federal University of Technology Owerri) faculties and departments - with runtime helpers, abbreviation maps, formatters, and full type safety.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Idikaelaida\\FutoDepartments\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "IdikaEliada",
+            "email": "idika1996@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
