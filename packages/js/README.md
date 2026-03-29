@@ -39,7 +39,7 @@ departmentAbbreviations["Computer Science"];  // "CSC"
 departmentAbbreviations["Human Anatomy"];     // "ANA"
 
 facultyAbbreviations["College of Medicine"];  // "COM"
-facultyAbbreviations["School of Physical Sciences"]; // "SPS"
+facultyAbbreviations["School of Physical Sciences"]; // "SOPS"
 ```
 
 ---
@@ -112,7 +112,7 @@ shortenDepartment("Computer Science");   // "CSC"
 shortenDepartment("Software Engineering"); // "SOE"
 
 shortenFaculty("College of Medicine");   // "COM"
-shortenFaculty("School of Physical Sciences"); // "SPS"
+shortenFaculty("School of Physical Sciences"); // "SOPS"
 
 // Formats a full name: first two in full, third as initial, rest discarded
 formatName("John");                      // "John"
