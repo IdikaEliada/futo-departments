@@ -34,8 +34,8 @@ jobs:
           cache: npm
           registry-url: https://registry.npmjs.org
       - run: npm ci
-      - run: npm run build
-      - run: npm publish --access public
+      - run: npm run build --workspace=packages/js
+      - run: npm publish --workspace=packages/js --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

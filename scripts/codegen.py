@@ -16,8 +16,8 @@ ROOT = Path(__file__).parent.parent
 data_dir = ROOT / "data"
 out_path = ROOT / "packages" / "python" / "futo_departments" / "__init__.py"
 
-faculties = json.loads((data_dir / "faculties.json").read_text())
-departments = json.loads((data_dir / "departments.json").read_text())
+faculties = json.loads((data_dir / "faculties.json").read_text(encoding="utf-8"))
+departments = json.loads((data_dir / "departments.json").read_text(encoding="utf-8"))
 
 # ── Validate ──────────────────────────────────────────────────────────────────
 
@@ -306,7 +306,7 @@ lines += [
 ]
 
 out_path.parent.mkdir(parents=True, exist_ok=True)
-out_path.write_text("\n".join(lines))
+out_path.write_text("\n".join(lines), encoding="utf-8")
 
 print(f"✓ Generated {out_path}")
 print(f"  {len(faculties)} faculties · {len(departments)} departments")
