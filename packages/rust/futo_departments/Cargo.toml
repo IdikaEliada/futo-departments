@@ -1,0 +1,9 @@
+[package]
+name = "string_helper"
+version = "0.1.0"
+edition = "2021"
+description = "A simple Rust string helper library"
+license = "MIT"
+repository = "https://github.com/yourusername/string_helper"
+
+[dependencies]
