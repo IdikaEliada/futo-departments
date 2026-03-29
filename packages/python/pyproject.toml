@@ -1,17 +1,24 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
-name = "my-package-name"  # must be unique on PyPI
-version = "0.1.0"
-description = "A simple example package"
-authors = [
-  { name="Your Name", email="your@email.com" }
-]
+name = "futo-departments"
+version = "1.0.0"
+description = "Faculties and departments data for FUTO (Federal University of Technology Owerri), with helper utilities."
 readme = "README.md"
-requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [{ name = "Idika Eliada" }]
+keywords = ["futo", "nigeria", "university", "departments", "faculties"]
+requires-python = ">=3.10"
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/yourusername/my_package"
+Homepage = "https://futo-departments-docs.pxxl.click/documentation"
+Repository = "https://github.com/IdikaEliada/futo-departments"
+
+[tool.hatch.build.targets.wheel]
+packages = ["futo_departments"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

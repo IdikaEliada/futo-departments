@@ -1,21 +1,23 @@
 {
   "name": "futo-departments",
   "private": true,
+  "packageManager": "npm@10.9.3",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
     "codegen": "npx tsx scripts/codegen.ts && python3 scripts/codegen.py",
     "codegen:js": "npx tsx scripts/codegen.ts",
     "codegen:py": "python3 scripts/codegen.py",
-    "build": "npm run build --workspaces --if-present",
-    "build:js": "npm run build --workspace=packages/js",
-    "build:py": "python -m build --workspace=packages/python",
-    "test": "npm run test --workspaces --if-present",
-    "test:js": "npm run test --workspace=packages/js",
-    "test:py": "cd packages/python && python3 -m pytest"
+    "build:js": "turbo run build --filter=packages/js",
+    "build:py": "cd packages/python && python -m build",
+    "test:js": "turbo run test --filter=packages/js",
+    "test:py": "cd packages/python && python -m pytest"
   },
   "devDependencies": {
-    "tsx": "^4.21.0"
+    "tsx": "^4.21.0",
+    "turbo": "^2.8.21"
   }
 }
