@@ -1,0 +1,45 @@
+name: CI — PHP
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'packages/php/**'
+      - 'data/**'
+      - 'scripts/codegen.php'
+  pull_request:
+    branches: [main, master]
+    paths:
+      - 'packages/php/**'
+      - 'data/**'
+      - 'scripts/codegen.php'
+
+jobs:
+  test:
+    name: Test PHP package
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php-version: ['8.0', '8.1', '8.2', '8.3']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP ${{ matrix.php-version }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          tools: composer:v2
+
+      - name: Validate composer.json
+        working-directory: packages/php
+        run: composer validate --strict
+
+      - name: Install dependencies
+        working-directory: packages/php
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Run tests
+        working-directory: packages/php
+        run: ./vendor/bin/phpunit tests/ --testdox

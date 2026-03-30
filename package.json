@@ -14,6 +14,7 @@
     "codegen:php": "php scripts/codegen.php",
     "build:js": "turbo run build --filter=@idikaeliada/futo-departments",
     "build:py": "cd packages/python && python -m build",
+    "build:php": "",
     "test:js": "turbo run test --filter=@idikaeliada/futo-departments",
     "test:py": "cd packages/python && python -m pytest"
   },

@@ -1,6 +1,6 @@
 {
     "name": "idikaelaida/futo-departments",
-    "description": "PHPfirst data package for FUTO (Federal University of Technology Owerri) faculties and departments - with runtime helpers, abbreviation maps, formatters, and full type safety.",
+    "description": "PHP first data package for FUTO (Federal University of Technology Owerri) faculties and departments - with runtime helpers, abbreviation maps, formatters, and full type safety.",
     "type": "library",
     "keywords": ["futo",
     "nigeria",
@@ -9,11 +9,17 @@
     "faculties"],
     "homepage": "https://github.com/IdikaEliada/futo-departments",
     "license": "MIT",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Idikaelaida\\FutoDepartments\\": "src/"
         }
     },
+     "autoload-dev": {
+    "psr-4": {
+      "Idikaeliada\\FutoDepartments\\Tests\\": "tests/"
+    }
+  },
     "authors": [
         {
             "name": "IdikaEliada",
@@ -23,5 +29,10 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "^13.0.4"
+    },
+    "require": {
+        "php": ">=8.0"
+    }
 }

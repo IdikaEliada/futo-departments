@@ -1,0 +1,42 @@
+name: Publish — PHP (Packagist)
+
+# Packagist doesn't need a "publish" step — it auto-syncs from GitHub tags.
+# This workflow validates the package and triggers a manual Packagist sync.
+# To enable auto-sync: go to packagist.org → your package → Settings → GitHub hook.
+
+on:
+  push:
+    tags:
+      - "php/v*.*.*"   # e.g. php/v1.0.0
+
+jobs:
+  test:
+    name: Test before release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          tools: composer:v2
+
+      - name: Install dependencies
+        working-directory: packages/php
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Run tests
+        working-directory: packages/php
+        run: ./vendor/bin/phpunit tests/ --testdox
+
+  notify-packagist:
+    name: Trigger Packagist sync
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Packagist
+        run: |
+          curl -XPOST -H 'content-type:application/json' \
+            'https://packagist.org/api/update-package?username=${{ secrets.PACKAGIST_USERNAME }}&apiToken=${{ secrets.PACKAGIST_TOKEN }}' \
+            -d '{"repository":{"url":"https://github.com/${{ github.repository }}"}}'
