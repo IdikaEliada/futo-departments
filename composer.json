@@ -1,0 +1,14 @@
+{
+    "name": "idikaeliada/futo-departments",
+    "description": "FUTO faculties and departments data package",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "require": { "php": ">=8.0" },
+    "autoload": {
+        "psr-4": {
+            "Idikaeliada\\FutoDepartments\\": "packages/php/src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

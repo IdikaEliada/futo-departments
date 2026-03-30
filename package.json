@@ -11,6 +11,8 @@
     "codegen": "npx tsx scripts/codegen.ts && python3 scripts/codegen.py",
     "codegen:js": "npx tsx scripts/codegen.ts",
     "codegen:py": "python3 scripts/codegen.py",
+    "codegen:java": "java -jar scripts/codegen.jar",
+    "codegen:java:compile": "python3 scripts/codegen_java.py",
     "codegen:php": "php scripts/codegen.php",
     "build:js": "turbo run build --filter=@idikaeliada/futo-departments",
     "build:py": "cd packages/python && python -m build",
@@ -21,7 +23,7 @@
   "devDependencies": {
     "mlly": "^1.8.2",
     "tsx": "^4.21.0",
-    "turbo": "^2.8.21",
+    "turbo": "^2.9.1",
     "vite": "^8.0.3"
   }
 }
