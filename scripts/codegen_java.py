@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 data_dir = ROOT / "data"
-out_path = ROOT / "packages" / "java" / "src" / "main" / "java" / "com" / "idikaeliada" / "futo" / "FutoDepartments.java"
+out_path = ROOT / "packages" / "java" / "futo_departments" / "src" / "main" / "java" / "com" / "idikaeliada" / "FutoDepartments.java"
 
 faculties   = json.loads((data_dir / "faculties.json").read_text(encoding="utf-8"))
 departments = json.loads((data_dir / "departments.json").read_text(encoding="utf-8"))
