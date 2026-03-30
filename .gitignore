@@ -2,6 +2,8 @@
 node_modules/
 
 # builds
+.turbo/
+.turbo\cache/
 dist/
 *.tgz
 
@@ -12,3 +14,5 @@ dist/
 *.env
 
 replacements.txt
+
+#scripts/
