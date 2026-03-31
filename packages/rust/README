@@ -1,0 +1,64 @@
+# futo-departments
+
+Faculties and departments data for [FUTO](https://futo.edu.ng) (Federal University of Technology Owerri), with helper utilities.
+
+This is the Rust port of the [`@idikaeliada/futo-departments`](https://www.npmjs.com/package/@idikaeliada/futo-departments) JavaScript package.
+
+## Installation
+
+```toml
+[dependencies]
+futo-departments = "1.0"
+```
+
+## Usage
+
+```rust
+use futo_departments::{
+    FACULTIES, DEPARTMENTS,
+    get_faculty, get_faculty_by_department, get_departments_by_faculty,
+    shorten_department, expand_department,
+    shorten_faculty, expand_faculty,
+    is_valid_department, is_valid_faculty,
+    mask_reg_number,
+};
+
+// Static data
+println!("{} faculties", FACULTIES.len());   // 12
+println!("{} departments", DEPARTMENTS.len()); // 60
+
+// Lookups (all case-insensitive)
+let faculty = get_faculty("School of Science").unwrap();
+println!("{}", faculty.abbreviation); // SCOS
+
+let abbr = shorten_department("Computer Science").unwrap();
+println!("{}", abbr); // CSC
+
+let full = expand_department("CYB").unwrap();
+println!("{}", full); // Cyber Security
+
+let school = get_faculty_by_department("Computer Science").unwrap();
+println!("{}", school); // School of Science
+
+let depts = get_departments_by_faculty("School of Science");
+println!("{} departments", depts.len()); // 7
+
+// Validation
+assert!(is_valid_department("Computer Science"));
+assert!(is_valid_faculty("School of Science"));
+
+// Masking
+let masked = mask_reg_number("U2020/1234567CS");
+println!("{}", masked); // U***7CS
+```
+
+## Available data
+
+| Field | Count |
+|---|---|
+| Faculties | 12 |
+| Departments | 60 |
+
+## License
+
+MIT
