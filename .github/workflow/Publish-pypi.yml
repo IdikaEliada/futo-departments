@@ -1,29 +1,32 @@
-name: Publish to PyPI
+name: Publish — Python (PyPI)
 
 on:
   push:
     tags:
-      - "py/v*.*.*"   # e.g. py/v1.0.0 — separate tag from JS releases
+      - "py/v*.*.*"   # e.g. py/v1.0.0
 
 jobs:
   test:
     name: Test before publish
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python-version }}
       - run: pip install pytest hatchling && pip install -e packages/python
       - run: pytest packages/python/tests -v
 
-  publish:
+  publish-pypi:
     name: Publish to PyPI
     needs: test
     runs-on: ubuntu-latest
     environment: pypi
     permissions:
-      id-token: write  # required for trusted publishing
+      id-token: write  # required for trusted publishing (no token needed)
 
     steps:
       - uses: actions/checkout@v4
@@ -37,7 +40,7 @@ jobs:
           pip install build
           python -m build packages/python
 
-      - name: Publish
+      - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: packages/python/dist/

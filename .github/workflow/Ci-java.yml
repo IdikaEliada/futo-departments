@@ -1,0 +1,42 @@
+name: CI — Java
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'packages/java/**'
+      - 'data/**'
+      - 'scripts/codegen_java.py'
+  pull_request:
+    branches: [main, master]
+    paths:
+      - 'packages/java/**'
+      - 'data/**'
+      - 'scripts/codegen_java.py'
+
+jobs:
+  test:
+    name: Test Java package
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        java-version: [11, 17, 21]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Java ${{ matrix.java-version }}
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ matrix.java-version }}
+          distribution: temurin
+          cache: maven
+
+      - name: Run tests
+        working-directory: packages/java
+        run: mvn test -B
+
+      - name: Build JAR
+        working-directory: packages/java
+        run: mvn package -DskipTests -B
