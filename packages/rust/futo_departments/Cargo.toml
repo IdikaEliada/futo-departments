@@ -1,9 +1,20 @@
 [package]
-name = "string_helper"
-version = "0.1.0"
+name = "futo-departments"
+version = "1.0.0"
 edition = "2021"
-description = "A simple Rust string helper library"
+description = "Faculties and departments data for FUTO (Federal University of Technology Owerri), with helper utilities."
 license = "MIT"
-repository = "https://github.com/yourusername/string_helper"
+repository = "https://github.com/IdikaEliada/futo-departments"
+homepage = "https://futo-departments-docs.pxxl.click/documentation"
+documentation = "https://docs.rs/futo-departments"
+keywords = ["futo", "nigeria", "university", "departments", "faculties"]
+categories = ["data-structures"]
+readme = "README.md"
+exclude = ["tests/", "benches/"]
 
-[dependencies]
+[lib]
+name = "futo_departments"
+path = "src/lib.rs"
+
+[dev-dependencies]
+# No external test deps — everything tests the public API directly
