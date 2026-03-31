@@ -136,21 +136,6 @@ Tests cover data integrity (no duplicates, no orphan departments), helper functi
 
 ---
 
-## Publishing to npm
-
-1. Set `"author"` in `package.json`
-2. `npm run build`
-3. `npm login`
-4. `npm publish`
-
-For a scoped package (e.g. `@yourname/futo-departments`), update the `"name"` field and run:
-
-```bash
-npm publish --access public
-```
-
----
-
 ## License
 
 MIT
