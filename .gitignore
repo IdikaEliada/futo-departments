@@ -15,4 +15,6 @@ dist/
 
 replacements.txt
 
+.privates/
+
 #scripts/

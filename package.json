@@ -8,12 +8,6 @@
   "scripts": {
     "build": "turbo run build",
     "test": "turbo run test",
-    "codegen": "npx tsx scripts/codegen.ts && python3 scripts/codegen.py",
-    "codegen:js": "npx tsx scripts/codegen.ts",
-    "codegen:py": "python3 scripts/codegen.py",
-    "codegen:java": "java -jar scripts/codegen.jar",
-    "codegen:java:compile": "python3 scripts/codegen_java.py",
-    "codegen:php": "php scripts/codegen.php",
     "build:js": "turbo run build --filter=@idikaeliada/futo-departments",
     "build:py": "cd packages/python && python -m build",
     "build:php": "",
