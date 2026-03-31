@@ -1,0 +1,24 @@
+/tests           export-ignore
+/phpunit.xml     export-ignore
+/.github         export-ignore
+/.gitignore      export-ignore
+/.gitattributes  export-ignore
+/data         export-ignore
+# Ignore everything in the root by default
+/* export-ignore
+
+# Keep the specific folder you want for the PHP package
+!/packages/php/ export-ignore
+
+# Specifically ignore other folders inside /packages if needed
+/packages/dart/ export-ignore
+/packages/java/ export-ignore
+/packages/js/ export-ignore
+/packages/python/ export-ignore
+/packages/rust/ export-ignore
+
+# Standard ignores (even if covered by /*)
+/.github export-ignore
+/node_modules export-ignore
+/.vscode export-ignore
+/data export-ignore
